@@ -79,7 +79,7 @@ grunt.initConfig({
       json: {
         files: jsonFiles,
         tasks: ['jsonlint']
-      }
+      },
       javascript: {
         files: jsFiles,
         tasks: ['jshint']
@@ -101,8 +101,8 @@ grunt.initConfig({
       build: {
         thumbnail: true,
         themejson: true,
-        pointsize: 24,
-        color: "#000099"
+        pointsize: 20,
+        color: "#ffffff"
       },
       renamezip: {
         filenames: ["<%= pkg.name %>.zip"]
@@ -110,9 +110,11 @@ grunt.initConfig({
     }
   });
 
-  grunt.loadNpmTasks('grunt-jsonlint');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  ['grunt-jsonlint',
+   'grunt-contrib-jshint',
+   'grunt-contrib-watch',
+   'grunt-contrib-compress'
+  ].forEach(grunt.loadNpmTasks);
 
   grunt.loadTasks('./tasks/');
 

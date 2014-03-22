@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
   grunt.registerMultiTask('setver', 'Update all version information.', function() {
     var execSync = require('exec-sync');
-    var newver = grunt.option('to') || execSync('git describe --tags');
+    var newver = grunt.option('to') || execSync(this.data.cmd || 'git describe --tags --always');
     var async = require('async');
     var fs = require('fs');
     var path = require('path');
