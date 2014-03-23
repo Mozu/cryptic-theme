@@ -1,12 +1,12 @@
 {
   "about": {
-    "name": "Cryptic Theme v0.1.0",
+    "name": "Cryptic Theme vinitial",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "0.1.0"
+    "version": "initial"
   },
   "settings": {},
   "emailTemplates": [],

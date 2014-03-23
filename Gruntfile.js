@@ -94,15 +94,21 @@ grunt.initConfig({
         themejson: true,
         packagejson: true,
         readmemd: true,
-        thumbnail: true,
-        pointsize: 72,
-        color: "#cbcbcb"
+        thumbnail: {
+          src: 'thumb.tpt.png',
+          color: '#cbcbcb',
+          pointsize: 72,
+          dest: 'thumb.png'
+        }
       },
       build: {
-        thumbnail: true,
         themejson: true,
-        pointsize: 20,
-        color: "#ffffff"
+        thumbnail: {
+          src: 'thumb.tpt.png',
+          color: '#ffffff',
+          pointsize: 20,
+          dest: 'thumb.png'
+        }
       },
       renamezip: {
         filenames: ["<%= pkg.name %>.zip"]
