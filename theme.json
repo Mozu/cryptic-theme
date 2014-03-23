@@ -6,7 +6,7 @@
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "lessvariable-1-g260e0eb"
+    "version": "stylesheets-1-gea17bf4"
   },
   "settings": {
     "bannerImageEnabled": true,
@@ -23,7 +23,66 @@
       "entityType": "webpage",
       "documentType": "web_page",
       "template": "brand-focus",
-      "userCreatable": true
+      "userCreatable": true,
+      "zones": [
+        {
+          "id": "brand-focus-header",
+          "rows": [
+            {
+              "columns": [
+                {
+                  "span": 12,
+                  "widgets": [
+                    {
+                      "definitionId": "cms-image",
+                      "config": {
+                        "height": 400,
+                        "imageHeight": "400",
+                        "imageSource": "externalUrl",
+                        "imageExternalUrl": "/resources/images/brands/example-logo.png"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "brand-focus-content",
+          "rows": [
+            {
+              "columns": [
+                {
+                  "span": 6,
+                  "widgets": [
+                    {
+                      "definitionId": "html",
+                      "config": {
+                        "body": "<div class=\"brand-focus-text\">A well-respected brand for decades, lorem ipsum dolor se amet.</div>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "span": 6,
+                  "widgets": [
+                    {
+                      "definitionId": "cms-image",
+                      "config": {
+                        "height": 400,
+                        "imageHeight": "400",
+                        "imageSource": "externalUrl",
+                        "imageExternalUrl": "/resources/images/brands/example-graphic.jpg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "widgets": [

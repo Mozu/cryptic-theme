@@ -6,7 +6,9 @@
 
 {% block page-header %}
 {% parent %}
-{% dropzone "brand-header" scope="page" %}
+<div class="brandfocus-header">
+{% dropzone "brand-focus-header" scope="page" %}
+</div>
 {% endblock page-header %}
 
 {% block site-nav %}
@@ -19,12 +21,7 @@
 <div class="mz-l-container">
   <h1 class="mz-pagetitle">Brand Focus: {{ pageContext.MetaTitle }}</h1>
   <div class="brand-focus">
-    <div class="brand-focus-text">
-      {% dropzone "brand-focus-text" %}
-    </div>
-    <div class="brand-focus-graphic">
-      {% dropzone "brand-focus-graphic" %}
-    </div>
+      {% dropzone "brand-focus-content" scope="page" %}
   </div>
 </div>
 {% endblock body-content %}
