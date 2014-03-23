@@ -32,10 +32,6 @@ module.exports = function(grunt) {
       themejson: function(cb) {
         var themejson = grunt.file.readJSON('theme.json');
         themejson.about.version = newver;
-        var newName = themejson.about.name.split('v');
-        newName.pop();
-        newName.push(newver);
-        themejson.about.name = newName.join('v');
         grunt.file.write('theme.json',JSON.stringify(themejson, null, 2));
         grunt.log.ok('Updated theme.json version to ' + newver);
         next(cb);
