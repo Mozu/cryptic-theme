@@ -1,17 +1,18 @@
 {
   "about": {
-    "name": "Cryptic Theme vpinterestwidget-1-ga2eff65",
+    "name": "Cryptic Theme vlessvlessvlessvariable",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "pinterestwidget-1-ga2eff65"
+    "version": "lessvariable"
   },
   "settings": {
     "bannerImageEnabled": true,
     "bannerImage": "../resources/images/cryptic-header.png",
-    "listProductThumbSize": 300
+    "listProductThumbSize": 300,
+    "listProductShortDesc": false
   },
   "emailTemplates": [],
   "pageTypes": [],
