@@ -10,7 +10,8 @@
   },
   "settings": {
     "bannerImageEnabled": true,
-    "bannerImage": "../resources/images/cryptic-header.png"
+    "bannerImage": "../resources/images/cryptic-header.png",
+    "listProductThumbSize": 300
   },
   "emailTemplates": [],
   "pageTypes": [],
