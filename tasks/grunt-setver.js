@@ -48,13 +48,13 @@ module.exports = function(grunt) {
       },
       thumbnail: function(cb) {
         child = spawn('convert',[
-                  'thumb.png.tpt',
-                  '-gravity',self.data.gravity || 'southeast',
-                  '-font',self.data.font || 'AvantGarde-Demi',
-                  '-pointsize',self.data.pointsize || 18,
-                  '-fill',self.data.color || 'black',
-                  '-annotate',0,
-                  newver,'thumb.png']);
+                  self.data.thumbnail.src,
+                  '-gravity',self.data.thumbnail.gravity || 'southeast',
+                  '-font',self.data.thumbnail.font || 'AvantGarde-Demi',
+                  '-pointsize',self.data.thumbnail.pointsize || 18,
+                  '-fill',self.data.thumbnail.color || 'black',
+                  '-annotate','0x0+10+10',
+                  newver,self.data.thumbnail.dest]);
         child.stderr.on('data', function(data) {
           grunt.log.error(data);
           cb(data);
