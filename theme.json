@@ -1,18 +1,19 @@
 {
   "about": {
-    "name": "Cryptic Theme vlessvlessvlessvariable",
+    "name": "Cryptic Theme vlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvlessvariable-1-g260e0eb",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "lessvariable"
+    "version": "lessvariable-1-g260e0eb"
   },
   "settings": {
     "bannerImageEnabled": true,
     "bannerImage": "../resources/images/cryptic-header.png",
     "listProductThumbSize": 300,
-    "listProductShortDesc": false
+    "listProductShortDesc": false,
+    "listProductCode": false
   },
   "emailTemplates": [],
   "pageTypes": [],

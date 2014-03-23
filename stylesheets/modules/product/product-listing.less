@@ -1,10 +1,20 @@
 .mz-productlisting {
+
+    border: 1px solid @mystic-lightgray;
+    padding: 15px;
+    margin: 7px 10px;
+
     .mz-productlisting-info {
         margin-top: 5px;
     }
     .mz-productlisting-title {
         font-size: @fontSizeLarger;
         text-decoration: none;
+        height: (@fontSizeLarger*2) + 4;
+        display: block;
+        &:hover {
+            color: @mystic-orange;
+        }
     }
     .mz-productlisting-shortdesc {
         margin: @gutter/4 @gutter/2 @gutter/4 0;
@@ -21,10 +31,10 @@
         display: block;
         height: @productListingThumbSize;
         width: @productListingThumbSize;
-        background: #eee;
+        background: @mystic-lightergray;
         line-height: @productListingThumbSize;
         text-align: center;
-        color: #aaa;
+        color: @mystic-lightgray;
         > * {
             vertical-align: middle;
         }
@@ -35,5 +45,10 @@
             float: left;
             margin: @gutter/2;
         }
+    }
+
+    .mz-pricestack {
+        text-align: right;
+        font-size: @fontSizeLarger;
     }
 }
