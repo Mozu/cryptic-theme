@@ -1,12 +1,12 @@
 {
   "about": {
-    "name": "Cryptic Theme vinitial-2-gf84d90f",
+    "name": "Cryptic Theme vthemesetting",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "initial-2-gf84d90f"
+    "version": "themesetting"
   },
   "settings": {
     "bannerImageEnabled": true,
