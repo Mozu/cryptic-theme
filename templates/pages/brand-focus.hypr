@@ -1,0 +1,30 @@
+{% extends "page" %}
+
+{% block title-tag-content %}Brand Focus: {{ pageContext.MetaTitle }} - {% parent %}{% endblock title-tag-content %}
+
+{% block body-tag-classes %} brandfocus {% endblock %}
+
+{% block page-header %}
+{% parent %}
+{% dropzone "brand-header" scope="page" %}
+{% endblock page-header %}
+
+{% block site-nav %}
+{% endblock site-nav %}
+
+{% block breadcrumbs %}
+{% endblock breadcrumbs %}
+
+{% block body-content %}
+<div class="mz-l-container">
+  <h1 class="mz-pagetitle">Brand Focus: {{ pageContext.MetaTitle }}</h1>
+  <div class="brand-focus">
+    <div class="brand-focus-text">
+      {% dropzone "brand-focus-text" %}
+    </div>
+    <div class="brand-focus-graphic">
+      {% dropzone "brand-focus-graphic" %}
+    </div>
+  </div>
+</div>
+{% endblock body-content %}

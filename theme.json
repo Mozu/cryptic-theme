@@ -16,7 +16,16 @@
     "listProductCode": false
   },
   "emailTemplates": [],
-  "pageTypes": [],
+  "pageTypes": [
+    {
+      "id": "brand-focus",
+      "title": "Brand Focus",
+      "entityType": "webpage",
+      "documentType": "web_page",
+      "template": "brand-focus",
+      "userCreatable": true
+    }
+  ],
   "widgets": [
     {
       "id": "pin_this",
