@@ -1,12 +1,12 @@
 {
   "about": {
-    "name": "Cryptic Theme vthemesetting",
+    "name": "Cryptic Theme vpinterestwidget",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "themesetting"
+    "version": "pinterestwidget"
   },
   "settings": {
     "bannerImageEnabled": true,
