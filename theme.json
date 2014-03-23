@@ -1,16 +1,16 @@
 {
   "about": {
-    "name": "Cryptic Theme vinitial",
+    "name": "Cryptic Theme vinitial-2-gf84d90f",
     "author": "You",
     "extends": "Core4",
     "isDesktop": true,
     "isMobile": true,
     "defaultLanguage": "en-US",
-    "version": "initial"
+    "version": "initial-2-gf84d90f"
   },
   "settings": {
     "bannerImageEnabled": true,
-    "bannerImage": "/resources/images/cryptic-header.jpg"
+    "bannerImage": "../resources/images/cryptic-header.png"
   },
   "emailTemplates": [],
   "pageTypes": [],
