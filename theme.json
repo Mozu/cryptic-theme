@@ -14,5 +14,47 @@
   },
   "emailTemplates": [],
   "pageTypes": [],
-  "widgets": []
+  "widgets": [
+    {
+      "id": "pin_this",
+      "displayName": "Pin This",
+      "displayTemplate": "catalog/pin-this",
+      "editViewFields": [
+        {
+          "name": "shape",
+          "fieldLabel": "Shape",
+          "xtype": "combo",
+          "store": [
+            [
+              "round",
+              "Round"
+            ],
+            [
+              "rectangular",
+              "Rectangular"
+            ]
+          ]
+        },
+        {
+          "name": "size",
+          "fieldLabel": "Size",
+          "xtype": "combo",
+          "store": [
+            [
+              "small",
+              "Small"
+            ],
+            [
+              "large",
+              "Large"
+            ]
+          ]
+        }
+      ],
+      "icon": "/resources/admin/widgets/pinterest.png",
+      "validPageTypes": [
+        "product"
+      ]
+    }
+  ]
 }

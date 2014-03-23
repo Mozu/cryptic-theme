@@ -1,0 +1,18 @@
+{% if model.config.shape == "round" %}
+  <a href="//www.pinterest.com/pin/create/button/" 
+    data-pin-do="buttonBookmark"  
+    data-pin-shape="round" 
+    {% if model.config.size == "large" %}data-pin-height="32"{% endif %}
+  >
+    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_{% if model.config.size == "large" %}32{% else %}16{% endif %}.png" />
+  </a>
+{% else %}
+  <a href="//www.pinterest.com/pin/create/button/" 
+    data-pin-do="buttonBookmark"
+    data-pin-color="red"
+    {% if model.config.size == "large" %}data-pin-height="28"{% endif %}
+  >
+     <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_{% if model.config.size == "large" %}28{% else %}20{% endif %}.png" />
+{% endif %}
+
+{% require_script "//assets.pinterest.com/js/pinit.js" %}
