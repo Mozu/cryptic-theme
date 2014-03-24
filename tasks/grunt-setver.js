@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             var child = childProcess.spawn('convert',[
                       self.data.thumbnail.src,
                       '-gravity',self.data.thumbnail.gravity || 'southeast',
-                      '-font',self.data.thumbnail.font || 'AvantGarde-Demi',
+                      //'-font',self.data.thumbnail.font || 'AvantGarde-Demi',
                       '-pointsize',self.data.thumbnail.pointsize || 18,
                       '-fill',self.data.thumbnail.color || 'black',
                       '-annotate','0x0+10+10',
