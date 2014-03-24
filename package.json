@@ -12,7 +12,6 @@
     "grunt-contrib-compress": "~0.6.0",
     "zubat": "git://github.com/zetlen/mozu-zubat.git#master",
     "grunt-jsonlint": "~1.0.4",
-    "async": "~0.2.10",
-    "exec-sync": "^0.1.6"
+    "async": "~0.2.10"
   }
 }

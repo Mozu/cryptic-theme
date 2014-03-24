@@ -59,8 +59,8 @@ grunt.initConfig({
     zubat: {
       main: {
         dir: '.',
-        manualancestry: ['../Core4'],
-        ignore: ['\\.git','node_modules','^/resources','^/tasks','\\.zip$']
+        manualancestry: ['./.references/Core4'],
+        ignore: ['\\.references','\\.git','node_modules','^/resources','^/tasks','\\.zip$']
       }
     },
     compress: {
