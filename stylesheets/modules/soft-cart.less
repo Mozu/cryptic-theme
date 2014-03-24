@@ -1,0 +1,100 @@
+.soft-cart-wrap {
+  background: rgba(33,33,33,0.95);
+  position: fixed;
+  right: -315px;
+  top: 0;
+  height: 100%;
+  .box-shadow(~"0 0 15px rgba(0,0,0,0.2)");
+  width: 300px;
+  color: @mystic-lightergray;
+  .transition(~"right 0.2s ease");
+  &.is-active {
+    right: 0;
+  }
+}
+
+.soft-cart {
+  a {
+    color: @mystic-lightergray;
+    text-decoration: none;
+    &:hover {
+      color: #ffffff;
+      background: @mystic-darkgray;
+    }
+  }
+  h1 {
+    margin: @gutter/2;
+    color: @mystic-lightergray;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .soft-cart-controls {
+    background: #000000;
+    margin: @gutter/4 0;
+    overflow: auto;
+  }
+  .soft-cart-control {
+    float: right;
+    display: block;
+    padding: @gutter/2;
+    
+  }
+  .soft-cart-total {
+    overflow: auto;
+    margin: @gutter/2;
+    border-bottom: 1px solid @mystic-lightgray;
+    font-size: @fontSizeLarger;
+    text-transform: uppercase;
+  }
+  .soft-cart-total-label {
+    float: left;
+  }
+  .soft-cart-total-amount {
+    float: right;
+  }
+  .soft-cart-items-label {
+    margin: @gutter/2;
+    border-bottom: 1px solid @mystic-lightgray;
+    font-size: @fontSizeLarger;
+    text-transform: uppercase;
+  }
+  .soft-cart-items {
+    overflow: scroll;
+    list-style: none;
+    padding: 0;
+    margin: @gutter/2;
+  }
+  .soft-cart-item {
+    overflow: auto;
+    border-bottom: 1px solid @mystic-lightgray;
+    margin: @gutter/4;
+  }
+  .soft-cart-item-image {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .soft-cart-item-title {
+    display: block;
+    font-size: @fontSizeLarger;
+    margin-bottom: @gutter/4;
+  }
+  .soft-cart-item-quantity {
+    display: inline-block;
+  }
+  .soft-cart-item-action {
+    display: inline-block;
+    position: relative;
+    margin: 0 @gutter/2;
+    &-more {
+      bottom: 4px;
+    }
+    &-less {
+      top: 4px;
+    }
+  }
+  .soft-cart-item-total {
+    font-weight: bold;
+    float: right;
+    margin-right: @gutter/4;
+  }
+}
