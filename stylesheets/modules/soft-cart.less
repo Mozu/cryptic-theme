@@ -1,3 +1,21 @@
+@-webkit-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:@mystic-orange;}        
+    100% {background-color:none;}
+}
+
+@-moz-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:@mystic-orange;}        
+    100% {background-color:none;}
+}
+
+@-ms-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:@mystic-orange;}        
+    100% {background-color:none;}
+}
+
 .soft-cart-wrap {
   background: rgba(33,33,33,0.95);
   position: fixed;
@@ -68,6 +86,16 @@
     overflow: auto;
     border-bottom: 1px solid @mystic-lightgray;
     margin: @gutter/4;
+    &.highlight {
+      -moz-animation: flash 1s ease-out;
+      -moz-animation-iteration-count: 2;
+
+      -webkit-animation: flash 1s ease-out;
+      -webkit-animation-iteration-count: 2;
+
+      -ms-animation: flash 1s ease-out;
+      -ms-animation-iteration-count: 2;
+    }
   }
   .soft-cart-item-image {
     max-width: 100%;

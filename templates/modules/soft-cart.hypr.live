@@ -18,7 +18,7 @@
   </div> 
   <ul class="soft-cart-items">
     {% for item in model.items %}
-    <li class="soft-cart-item">
+    <li class="soft-cart-item" data-mz-cart-item="{{ item.id }}">
       <img class="soft-cart-item-image" src="{{ item.product.imageUrl }}?max=300" alt="{{ item.product.name }}" />
       <a class="soft-cart-item-title" href="{{ item.product.url }}">{{ item.product.name }}</a>
       <span class="soft-cart-item-quantity">{{ labels.qty }}: {{ item.quantity }}</span>

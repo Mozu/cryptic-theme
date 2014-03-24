@@ -55,6 +55,10 @@ function($, Backbone, CartModels) {
       };
 
       $(document.body).on('click', clickAway);
+    },
+
+    highlightItem: function(itemid) {
+      this.view.$('.soft-cart-item[data-mz-cart-item="' + itemid + '"]').removeClass('highlight').addClass('highlight');
     }
   };
 
